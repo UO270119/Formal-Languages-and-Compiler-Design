@@ -1,0 +1,26 @@
+-- Language --
+
+operators:
+	== -> equals
+	> -> greater
+	< -> smaller
+	( -> (
+	) -> )
+	% -> remainder
+	+ -> plus
+	- -> minus
+
+keywords:
+	int -> regular
+	input(n) -> read(n)
+	if -> check
+	elif -> checkif
+	else -> not
+	for -> loop
+	i (any for variable) -> var
+	in range(a, b) -> rango(a,b)
+	print -> show
+	break -> end
+	and -> y
+	or -> o
+	

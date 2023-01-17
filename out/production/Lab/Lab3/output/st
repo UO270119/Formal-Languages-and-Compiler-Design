@@ -1,0 +1,13 @@
+Symbol Table as:     Hash Table
+Symbol               ST_Pos
+a                    0
+b                    1
+c                    2
+if                   13
+is                   26
+greater              67
+number               68
+largest              75
+remainder            78
+",                   79
+greatest             87

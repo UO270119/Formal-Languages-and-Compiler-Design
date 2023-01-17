@@ -1,0 +1,10 @@
+empieza
+check a greater b y a greater c
+	greatest remainder a
+checkif b greater a y b greater c
+	greatest remainder b
+not
+	greatest remainder c	
+
+show("The largest number is:", greatest)
+acaba

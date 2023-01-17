@@ -1,0 +1,43 @@
+Syntax - contains the syntactical rules of the language
+
+The words - predefined tokens are specified between " and ":
+
+program ::= "VAR" decllist ";" cmpdstmt "."
+
+decllist ::= declaration | declaration ";" decllist
+
+declaration ::= IDENTIFIER ":" type
+
+type1 ::= "BOOLEAN" | "CHAR" | "INTEGER" | "REAL"
+
+arraydecl ::= "MATRIZ" "[" nr "]" "DE" type1
+
+type  ::= type1 | arraydecl
+
+cmpdstmt ::= "EMPIEZA" stmtlist "ACABA"
+
+stmtlist ::= stmt | stmt ";" stmtlist
+
+stmt ::= simplstmt | structstmt
+
+simplstmt ::= assignstmt | iostmt
+
+assignstmt ::= IDENTIFIER ":=" expression
+
+expression ::= expression "+" term | term
+
+term ::= term "*" factor | factor
+
+factor ::= "(" expression ")" | IDENTIFIER
+
+iostmt ::= "INPUT" | "SHOW" "(" IDENTIFIER ")"
+
+structstmt ::= cmpdstmt | ifstmt | whilestmt
+
+ifstmt ::= "CHECK" condition "ENTONCES" stmt ["NOT" stmt]
+
+whilestmt ::= "MIENTRAS" condition "HAZ" stmt
+
+condition ::= expression RELATION expression
+
+RELATION ::= "<" | "<=" | "=" | "<>" | ">=" | ">"

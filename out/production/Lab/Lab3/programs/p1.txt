@@ -1,0 +1,14 @@
+empieza
+a equals regular read (a)
+b equals regular read (b)
+c equals regular read (c)
+
+check a greater b y a greater c
+	greatest equals a
+checkif b greater a y b greater c
+	greatest equals b
+not
+	greatest equals c	
+
+show("The largest number is:", greatest)
+acaba

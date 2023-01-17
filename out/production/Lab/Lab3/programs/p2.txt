@@ -1,0 +1,11 @@
+empieza
+n equals regular read (n)
+
+check n greater than 1
+	loop var rango (2, n)
+		check (n remainder i) equals 0
+			show(n, "is not a prime number")
+			end
+	not:
+		show(n, "is a prime number")
+acaba
